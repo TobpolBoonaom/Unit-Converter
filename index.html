@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Converter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Unit Converter</h1>
+        
+        <!-- Converter Type Selection -->
+        <label for="converter-type">Select Conversion Type</label>
+        <select id="converter-type">
+            <option value="length">Length</option>
+            <option value="mass">Mass</option>
+            <option value="temperature">Temperature</option>
+            <option value="energy">Energy</option>
+        </select>
+
+        <!-- Length Converter Section -->
+        <div id="length-units" class="section">
+            <h2>Length Conversion</h2>
+            <select id="unit-from-length">
+                <option value="pm">Picometer</option>
+                <option value="nm">Nanometer</option>
+                <option value="µm">Micrometer</option>
+                <option value="mm">Millimeter</option>
+                <option value="cm">Centimeter</option>
+                <option value="dm">Decimeter</option>
+                <option value="m">Meter</option>
+                <option value="km">Kilometer</option>
+                <option value="Mm">Megameter</option>
+                <option value="Gm">Gigameter</option>
+                <option value="Tm">Terameter</option>
+            </select>
+            <select id="unit-to-length">
+                <option value="pm">Picometer</option>
+                <option value="nm">Nanometer</option>
+                <option value="µm">Micrometer</option>
+                <option value="mm">Millimeter</option>
+                <option value="cm">Centimeter</option>
+                <option value="dm">Decimeter</option>
+                <option value="m">Meter</option>
+                <option value="km">Kilometer</option>
+                <option value="Mm">Megameter</option>
+                <option value="Gm">Gigameter</option>
+                <option value="Tm">Terameter</option>
+            </select>
+        </div>
+
+        <!-- Mass Converter Section -->
+        <div id="mass-units" class="section">
+            <h2>Mass Conversion</h2>
+            <select id="unit-from-mass">
+                <option value="ng">Nanogram</option>
+                <option value="µg">Microgram</option>
+                <option value="mg">Milligram</option>
+                <option value="g">Gram</option>
+                <option value="kg">Kilogram</option>
+                <option value="t">Metric Ton</option>
+                <option value="ton">Ton</option>
+            </select>
+            <select id="unit-to-mass">
+                <option value="ng">Nanogram</option>
+                <option value="µg">Microgram</option>
+                <option value="mg">Milligram</option>
+                <option value="g">Gram</option>
+                <option value="kg">Kilogram</option>
+                <option value="t">Metric Ton</option>
+                <option value="ton">Ton</option>
+            </select>
+        </div>
+
+        <!-- Temperature Converter Section -->
+        <div id="temperature-units" class="section">
+            <h2>Temperature Conversion</h2>
+            <select id="unit-from-temperature">
+                <option value="C">Celsius</option>
+                <option value="F">Fahrenheit</option>
+                <option value="K">Kelvin</option>
+            </select>
+            <select id="unit-to-temperature">
+                <option value="C">Celsius</option>
+                <option value="F">Fahrenheit</option>
+                <option value="K">Kelvin</option>
+            </select>
+        </div>
+
+        <!-- Energy Converter Section -->
+        <div id="energy-units" class="section">
+            <h2>Energy Conversion</h2>
+            <select id="unit-from-energy">
+                <option value="J">Joule</option>
+                <option value="cal">Calorie</option>
+            </select>
+            <select id="unit-to-energy">
+                <option value="J">Joule</option>
+                <option value="cal">Calorie</option>
+            </select>
+        </div>
+
+        <!-- Value Input and Convert Button -->
+        <input type="number" id="value-input" placeholder="Enter value">
+        <button id="convert-btn">Convert</button>
+
+        <!-- Display Converted Value -->
+        <p id="converted-value"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
